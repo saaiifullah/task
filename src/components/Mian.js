@@ -20,7 +20,7 @@ const Main = () => {
     <div className="relative bg-cover bg-center h-screen" style={{ backgroundImage: `url(${background})` }}>
       {/* Main content */}
       <div className="flex flex-col items-center mt-10 px-4 sm:px-6 lg:px-8">
-        <h1 className="text-white text-3xl font-bold mb-10 text-center">
+        <h1 className="text-white text-3xl font-bold mb-10 mt-20 lg:mt-0 text-center">
           Connecting People to Education
         </h1>
 
@@ -81,25 +81,25 @@ const Main = () => {
       <div>
   <img src={bg2} alt='bg2' />
 
-  <div className='flex absolute top-64'>
-    <div className="w-[60%] h-auto rounded-tl-[50px] overflow-hidden ml-4">
-      <img src={group20} alt="group20" />
-    </div>
-
-    <div className="mt-[150px] w-[395px] h-[300px] mr-10">
-      <img src={second} alt="second" />
-    </div>
-
-    <div className="mt-[150px] w-[200px] h-[180px] bg-black text-white p-4 ml-4">
-      <h1 className="text-3xl font-sans">Opportunity</h1>
-      <p className="text-sm mt-2">
-        Want to start your own University or Institute? Get expert advice and a detailed feasibility report. Let's make your vision a reality!
-      </p>
-    </div>
+  <div className='flex flex-col lg:absolute top-64 lg:flex-row'>
+  <div className="w-full lg:w-[60%] h-auto rounded-tl-[50px] overflow-hidden ml-4">
+    <img src={group20} alt="group20" className="w-full h-auto" />
   </div>
 
+  <div className="mt-4 lg:mt-[150px] w-full lg:w-[395px] h-[300px] mr-10">
+    <img src={second} alt="second" className="w-full h-auto" />
+  </div>
+
+  <div className="mt-4 lg:mt-[150px] w-full lg:w-[200px] h-[180px] bg-black text-white p-4 ml-4">
+    <h1 className="text-3xl font-sans">Opportunity</h1>
+    <p className="text-sm mt-2">
+      Want to start your own University or Institute? Get expert advice and a detailed feasibility report. Let's make your vision a reality!
+    </p>
+  </div>
+</div>
+
   {/* Numbers below the images */}
-  <div className="absolute top-full mt-40 flex flex-col items-center justify-center p-10 px-4 lg:px-8">
+  <div className="flex flex-col items-center justify-center p-10 px-4 lg:px-8 lg:absolute top-full mt-40">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 w-full">
       <div className='bg-teal-200 w-full h-[200px] flex flex-col items-center justify-center'>
         <h1 className="text-3xl sm:text-4xl text-white">90</h1>
